@@ -3,6 +3,10 @@ project(CS4080 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CS4080
+add_executable(hello_world
         Ch.1/hello_world.c
-        Ch.1/doubly_linked_list.c)
+)
+
+add_executable(doubly_linked_list
+        Ch.1/doubly_linked_list.c
+)
