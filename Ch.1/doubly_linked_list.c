@@ -70,6 +70,32 @@ void findNode(int x) {
     return;
 }
 
+//function to delete from the list
+int deleteNode(int x) {
+    Node *cur = head;
+
+    while (cur != NULL && cur->data != x) {
+        cur = cur->next;
+    }
+
+    if (cur == NULL) {
+        return 0;
+    }
+
+    if (cur->prev != NULL)
+        cur->prev->next = cur->next;
+    else
+        head = cur->next;
+
+    if (cur->next != NULL)
+        cur->next->prev = cur->prev;
+    else
+        tail = cur->prev;
+
+    free(cur);
+    return 1;
+}
+
 //printing function to return the list
 void Print() {
     struct Node *temp = head;
@@ -92,6 +118,9 @@ int main() {
 
     findNode(9);
 
+    Print();
+
+    deleteNode(20);
     Print();
 
     return 0;
