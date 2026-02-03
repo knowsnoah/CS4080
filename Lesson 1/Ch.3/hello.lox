@@ -1,3 +1,5 @@
-print "Hello, Lox!";
-print 1 + 2 * 3;
+print "Hello World!";
+print 4 + 5;
 
+print 1/0;
+print "test";
