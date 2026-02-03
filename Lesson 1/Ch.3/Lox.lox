@@ -1,8 +1,0 @@
-#Sample Lox Code For #1
-
-print 10 + 3 //should return 13
-print 6 * 7 //should return 13
-print (1 + 4) * 4 //should return 20
-
-#Edge Case 
-print 1 / 0  //dividing be zero
