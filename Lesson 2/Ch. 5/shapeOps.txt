@@ -1,0 +1,19 @@
+# Challenge Question 2
+
+class ShapeOps s where 
+area :: s -> Double 
+perimeter :: s -> Double 
+data Circle = Circle Double 
+
+instance ShapeOps Circle where 
+    area (Circle r) = pi * r * r perimeter (Circle r) = 2 * pi * r 
+    data Rectangle = Rectangle Double Double 
+instance ShapeOps Rectangle where 
+    area (Rectangle w h) = w * h 
+    perimeter (Rectangle w h) = 2 * (w + h) 
+
+#The typeclass defines a fixed bundle of operations 
+#(like area and perimeter) that any new type must 
+#implement, allowing new types to be added easily 
+#while keeping all related operations grouped 
+#together
