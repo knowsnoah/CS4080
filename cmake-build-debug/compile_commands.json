@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/ojeda/OneDrive/Documents/GitHub/CS4080/cmake-build-debug",
+  "command": "C:\\Users\\ojeda\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -g -std=gnu11 -fdiagnostics-color=always -o CMakeFiles\\hello_world.dir\\Ch.1\\hello_world.c.obj -c C:\\Users\\ojeda\\OneDrive\\Documents\\GitHub\\CS4080\\Ch.1\\hello_world.c",
+  "file": "C:/Users/ojeda/OneDrive/Documents/GitHub/CS4080/Ch.1/hello_world.c",
+  "output": "C:/Users/ojeda/OneDrive/Documents/GitHub/CS4080/cmake-build-debug/CMakeFiles/hello_world.dir/Ch.1/hello_world.c.obj"
+},
+{
+  "directory": "C:/Users/ojeda/OneDrive/Documents/GitHub/CS4080/cmake-build-debug",
+  "command": "C:\\Users\\ojeda\\AppData\\Local\\Programs\\CLion\\bin\\mingw\\bin\\gcc.exe -g -std=gnu11 -fdiagnostics-color=always -o CMakeFiles\\doubly_linked_list.dir\\Ch.1\\doubly_linked_list.c.obj -c C:\\Users\\ojeda\\OneDrive\\Documents\\GitHub\\CS4080\\Ch.1\\doubly_linked_list.c",
+  "file": "C:/Users/ojeda/OneDrive/Documents/GitHub/CS4080/Ch.1/doubly_linked_list.c",
+  "output": "C:/Users/ojeda/OneDrive/Documents/GitHub/CS4080/cmake-build-debug/CMakeFiles/doubly_linked_list.dir/Ch.1/doubly_linked_list.c.obj"
+}
+]
