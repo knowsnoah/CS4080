@@ -18,4 +18,6 @@ add_executable(clox
         "../Ch.14/question 3/memory_hardcore.c"
         "../Ch.14/question 3/memory_hardcore.h"
         "../../Lesson 8/Chapter 17/question 1/expression.c"
+        "../../Lesson 8/Chapter 17/question 3/complier.c"
+        "../../Lesson 8/Chapter 17/question 3/complier.h"
 )
