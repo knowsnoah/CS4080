@@ -5,6 +5,8 @@
 //values at runtime and understand what the program is actually
 //working with
 
+//in vm.c
+
 static bool typeNative(int argCount, Value* args, Value* result){
     if (argCount != 1) {
         runtimeError("Expected 1 argument but got %d.", argCount);
@@ -17,8 +19,14 @@ static bool typeNative(int argCount, Value* args, Value* result){
         *result = OBJ_VAL(copyString("number", 6));
     } else if (IS_BOOL(value)) {
         *result = OBJ_VAL(copyString("bool", 4));
-    } else if (IS_NIL(values)) {
+    } else if (IS_NIL(value)) {
         *result = OBJ_VAL(copyString("nil", 3));
-    } else if (IS_OBJ(value)) {
-
+    } else if (IS_STRING(value)) {
+        *result = OBJ_VAL(copyString("string", 6));
+    } else if (IS_FUNCTION(value)) {
+        *result = OBJ_VAL(copyString("function", 8));
+    } else if (IS_NATIVE(value)) {
+        *result = OBJ_VAL(copyString("native", 6));
+    } else {
+        *result = OBJ_VAL(copyString("unknown", 7));
     }
